@@ -1,0 +1,134 @@
+/*====== GOOGLE FONTS ======*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Outfit', 'Open Sans', 'Arial', 'san-serif';
+    min-height: 100vh;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    text-align: center;
+    flex-flow: row wrap;
+}
+
+ main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+} 
+
+.container {
+    background-color:  var(--white);
+    width: 375px;
+    border-radius: 20px;
+    padding: 14px;
+    height: 590px;
+    margin-top: 70px;
+}
+
+img {
+    margin-top: 0px;
+    width: 340px;
+    height: 340px;
+    border-radius: 7px;
+}
+
+.text {
+    font-size: 1.7em;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.23em;
+    font-weight: 400;
+    color: var(--dark-blue);
+    margin-top: 15px;
+
+}
+
+footer {
+    margin-bottom: -80px;
+}
+
+  
+footer a {
+    color: var(--greyish-blue);
+}
+
+/*====== CSS VARIABLES ====*/
+:root {
+--white: hsl(0, 0%, 100%)
+--light-gray: hsl(212, 45%, 89%)
+--grayish-blue: hsl(220, 15%, 55%)
+--dark-blue: hsl(218, 44%, 22%)
+
+}
+
+/*======= FONT SIZE FOR SMALL DEVICES =======*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 968px) {
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        width: 100%;
+        margin-top: 250px;
+    }
+    
+    .container{
+        width: 350px;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+
+    .text {
+        font-size: 25px;
+        margin-top: -50px;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: -120px;
+    }
+
+    img {
+        margin-top: -30px;
+        width: 320px;
+        height: 320px;
+        border-radius: 7px;
+    }
+
+    footer {
+        width: 100%;
+        font-size: 0.733em;
+        text-align: center;
+        justify-content: center;
+        margin-top: auto;
+    }
+  
+}
